@@ -1,0 +1,5596 @@
+fileFormatVersion: 2
+guid: d97daa17e4984a148963d58c274e15e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a591e930657a467428fbb6516addef45
+      internalID: -638965160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e643a63b109bdb14eb1eae8132ad87a9
+      internalID: 1820995890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f73a3457ff8c34e8ff3515e77d5f64
+      internalID: -1641971508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adc1df3a8c62a147b75cba815a77c29
+      internalID: -1781834472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56638d4387a586344a5c7b096a58843d
+      internalID: -1331052149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa8962f2d4d4454a892a2b74f7f5d1a
+      internalID: -222250839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb475e84fae16f3448efdb9028febf83
+      internalID: -1455624758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86870c857d234894a9e4e7ec1ff1bc07
+      internalID: 87147268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7950267a1f5dda5479de05370248e42b
+      internalID: -2143216799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26313eec739a974cb2b4b49bdda3ffc
+      internalID: -1566354467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12335eef135a4014e8a2c9d38f5d4c0a
+      internalID: 2053121922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f67b0c3288c4934eaa9b073264b821d
+      internalID: 642506294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77016f92641276940a4a4ce43df981df
+      internalID: 1900835046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a285299c1d79c4483d3414c159774b
+      internalID: 159310268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eade85d84d9ef3429522909c7888a2f
+      internalID: 487622294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2170662007f39741843fefa1d169d30
+      internalID: 993342495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a00ebf26ce5514e8b4ae1f39f15745
+      internalID: 1093158532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173451d62ce8d8642a2625d86d9a76de
+      internalID: -166373173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a019001a905b9f4781f46b8bf1250a2
+      internalID: -1164265402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41aabf2ca22edda4c99b489e6e948ab7
+      internalID: 572247460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca7a8cecb040094183414219de8e0de
+      internalID: 35741153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de31488b4308d0a4d91e374b51f6845a
+      internalID: -739657311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ad4c73f0601bb4782cccde90a4c314
+      internalID: 371450085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_23
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60c5e7a53be5854888e28933c811709
+      internalID: -249962147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe81b967cfeb57346a11add4563cba69
+      internalID: -2125886828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_25
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdcca24df287644e95f7906a954c006
+      internalID: 951879867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_26
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8619c564fd1c245a1991b648812b80
+      internalID: 638500993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_27
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d2fbf238412bb4492872f629eb8756
+      internalID: 1285681318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8e48899aaf38f4796d121dd2fa944b
+      internalID: 290006845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd5a141ef5883c4baa68e827682a974
+      internalID: -1027049369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364f3248fed80cd40ad4029c673a1e97
+      internalID: 1995075774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c379147341c39fe4cb259774ef077404
+      internalID: 1867111242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1c5e0e8ba4cd04b8ffb0c2e8012603
+      internalID: -200505787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3f43e817c2c7142ad567ba1c3224f5
+      internalID: -1549865153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c185504d96c274b46a6a3f17a8ae634e
+      internalID: 1908338993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bfb33cec3de8647b4fffc19a459c81
+      internalID: -1202236846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f8a4ecae5073f40a9dca5a6f4621ca
+      internalID: 896682732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9cb5743e1ed90498ab393496057f5b
+      internalID: -1564141975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf56723d5ffa2f49bb5783a3257747d
+      internalID: 1509457398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e82167eabe7bb48ab72c1f72fc1ee6
+      internalID: -1664496278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_40
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0305f87bbe1629459885944d8c50db8
+      internalID: 231686308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0321ce34544ff764faf99c261e4f49a1
+      internalID: -1400673561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_42
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee1fcf6b779a68428d9909412959e91
+      internalID: 794377402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_43
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dad77bc1c9fa914d989f8883a3aa664
+      internalID: -779691274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4be53ff5966004a9e73c995d9e2c2b
+      internalID: -19551760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb87c5d51ddd33e479d50de23e8c400b
+      internalID: 407268751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9538658510c7420468e1fbdead00668f
+      internalID: 1469960656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_47
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01262aa603a21c8449aa30e1724490ae
+      internalID: -951846077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deeeda531d06764da261df43c7e4a5a
+      internalID: -391714860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_49
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49bc6c2c4ed7bc4ca490be24e447c4f
+      internalID: -784980696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_50
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7236f5c27267b834589235fa11624aeb
+      internalID: -153519228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da552890f46408340a7b7047d2d06e08
+      internalID: -1459730117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_52
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9dbe4eb6f8dcd4cbfd0474b35d5f17
+      internalID: 1768222935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_53
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2339fe92880fd4a48bc3dd25d9f98122
+      internalID: -121223769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f47d3268c49ae94382dc032edf056ca
+      internalID: 1139527681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_55
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b796e255acb104084bb9b6f1fef136
+      internalID: -1589739741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_56
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c34c2b9624a9440a62c5ee94657f4f
+      internalID: 271744109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_57
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edb4ef566361a242854902322acbe92
+      internalID: -463791820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452902e0db1a6e949855a923306d3c82
+      internalID: 2105960127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_59
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31118892cea702a409849a6afa9eaf3b
+      internalID: 1970237612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb5eda53ed57b542b9bb377daae4019
+      internalID: -1626106386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_61
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b34d41a444c374eab11eb7f7b15604
+      internalID: -605701698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad42961d51f64b9498b0e32876c5e239
+      internalID: -1859879091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_63
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf03b176b9f234892026b204f36521
+      internalID: -556504014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fed802974873224399180c845952d8c
+      internalID: -1586272986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_65
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa3e528bdbc9fc40aa368888353e1c6
+      internalID: -1901426414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b0c4b057754341a6007e2adef427b
+      internalID: -626370095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_67
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa76c639a68e1984e8f3c39c0290e1c6
+      internalID: 376463263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaa5b1ea9b48ba4cb8db4d83e31373a
+      internalID: 1441330183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_69
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee8818904e5bf14f80af8a4e605db15
+      internalID: -239297774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_70
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb757b3e9ab98e4e803405afc67d9d3
+      internalID: -1476108090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_71
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b3a236a5b6fff40abddda07e1266de
+      internalID: 715293808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_72
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0ea13994f1d3d42bdbe10d5983feee
+      internalID: 1410755198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_73
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f3109cfbf76ba429f0f8303a69b75a
+      internalID: 1554553286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_74
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c618ab9de9a3d0f4f9cc197f28b6f4d9
+      internalID: 1445048483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_75
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e34f36cbe91734891e1f843d317dad
+      internalID: 753450111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5989eecafe0b9574b9b1b04d9d69ab1f
+      internalID: 654957056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_77
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189df92f39b18e740a801fda1d04817b
+      internalID: 350052543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3ddb22cd6ef9e4fbecdc24d90fefc3
+      internalID: 1171018804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349d13fee83e58042ad47308d139c43d
+      internalID: -1474178154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48e91a1cc2bd9b479a6cc7c92034688
+      internalID: 1073470258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_81
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502d5c1cfbdd0b947a62912da8ac2471
+      internalID: 874003143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93943b9f3ed171b41aba0b2baeac5f06
+      internalID: -234153271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_83
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974f45dfa3d92884599c749aafb16b35
+      internalID: -1444407884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a085682416c768498ab1399622e76a2
+      internalID: 2092088199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_85
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8b3c855628fa2489a63fbdb66b29de
+      internalID: 313545951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_86
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5225f4d14f4a44ab52c326d0ac19a6
+      internalID: 230107187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_87
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6281056e808e0f14cac20b819f200a87
+      internalID: -388671517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_88
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd93478ea0548d14cb23ddba365ed112
+      internalID: 908145450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_89
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595f73d95333d32479f93aef4e2cadab
+      internalID: 262868483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_90
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df74788faf0b5cd48be63c4b01861c7a
+      internalID: -374942237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_91
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a220671612632c4082c909c35326c58
+      internalID: -2097628250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b26678b1f213d4089f14543ec14a87
+      internalID: 1798024659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c20fe0604587eb40a2a3c46dee98925
+      internalID: 675262797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_94
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b92262c52045bd4e8c63369156c6fa4
+      internalID: 201230266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_95
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0661f4163ee914b98f2f3bd478e90e
+      internalID: 1589013420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d160c7842bdced541a99b928f6c81a76
+      internalID: -170699911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_97
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a36c65280145994e86a57e227daf66f
+      internalID: 412984776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_98
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb967e80b1763145953069b46388ae7
+      internalID: 1517774498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_99
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42ff2da01a9dfd4e8570842fb97171a
+      internalID: -1224287216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_100
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b408c930a62194c4e92337cf478ac4ea
+      internalID: 1553429511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_101
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de71bf87054402498eb732515335bfe
+      internalID: 730434375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_102
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e7a606fa4e66a4fac9a23abd76b450
+      internalID: 1622616746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_103
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19522dc9ca34e394eb8a54b394878911
+      internalID: 138362990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_104
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dbecb8f78121340a98b88801e72420
+      internalID: -418661191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_105
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a349d1c670dcd147844b7da106747aa
+      internalID: 971337917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_106
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85786ac08ce049e4aac0a9b130b3a4c3
+      internalID: 702719889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_107
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fa14ce75e9b9e40a1912478bf5b9f9
+      internalID: -563663494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1a96fc8f413704ea3498e8f1adb620
+      internalID: -1707656773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_109
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b92fd82e17755418c6cb2229248c2d
+      internalID: 653352792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_110
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20cf967e00e87d4bb16b181cd320206
+      internalID: -2141026218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_111
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a746d6136481e45b0bd2f9550f233d
+      internalID: 794996253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_112
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db577b1c30163840a9e0376f355b7c5
+      internalID: -605904339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_113
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9378652f745fac5478ee46ff40931911
+      internalID: -385309795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_114
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04842d306a8b0e541aa76f9dcfac7c15
+      internalID: -534122817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_115
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c368f57e65dc84fa9a0c3aca07a90c
+      internalID: -831616474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799e50ea5548b544fa481bd15fa8628f
+      internalID: -1848488128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_117
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203e7696b23bdab4fbb9a5eb7e5f83ee
+      internalID: 1675387069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_118
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99f7204d706b214294d84f50d3adfb7
+      internalID: -1525883795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_119
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7104b17b747ed8f4793254d314d4c5d8
+      internalID: -1763970386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_120
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8293feeb4c6c6c941a7e4d7d25c0ff46
+      internalID: 1764390411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_121
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5d580ae97cf85468749ced6f7c4b1f
+      internalID: -537234861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_122
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a2b18ea72f98143a068be939286be1
+      internalID: -1022618685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_123
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f492f6c7c91da745ac6c76ade1430b2
+      internalID: 108721943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_124
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99201b3189e5544fa5e04f2a8f3e5c0
+      internalID: -1600410386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_125
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f10e16ca8f1ced4096a9c203d6fc17f
+      internalID: 853190825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb00c82d9ec908449aedceabc76db706
+      internalID: -2033902242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_127
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2ab3d7dcf327742a75e6ff32c45003
+      internalID: 1378757689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbf36ab0d73688469ebb32e9e0c77d5
+      internalID: -638104100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_129
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4766164caebdab64189946cfde612e1a
+      internalID: 1349406118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_130
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8d31f7f931c7243a8acb85b59944cb
+      internalID: -1514063651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_131
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fff8dd0675a5d048be3c4acd9e89b1e
+      internalID: -597375219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09550b38ba035914d901e47b997148a7
+      internalID: 1290050467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_133
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502515f823ba41d47b834f360f4d8999
+      internalID: -722105840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_134
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a5623a2fe88e04aacc344b26cff5d4
+      internalID: -1126858953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_135
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9103879ef130314094cb2332c7d3d84
+      internalID: 595014526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_136
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13001e8187e55d4382175225c099b9b
+      internalID: 717865185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_137
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347a25018e2883f4cad17db399017d16
+      internalID: -17578950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_138
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b0b902601f3e94483594b2fc19d08f
+      internalID: 1668692178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_139
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f773be1315a47344f9aaf9603b2f9766
+      internalID: -1445875886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c271f9c3141d3384f958b9b35fdd80ef
+      internalID: 2005056379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_141
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3363a1dd9e9974d43b6c266d6be1e9c9
+      internalID: -2098770841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_142
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bc371001be5ad4884dd725a8ae592b
+      internalID: -1677133961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_143
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11760e78a6fbdf040b589d8bf857aa2f
+      internalID: -140477776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106a5ac65e812e14299c880a2d2eceeb
+      internalID: 210604480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_145
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ba89ab587dbae4896a69b715ee2f37
+      internalID: -2106227094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_146
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1784293e40a5c6c43933eebbafd8f6ae
+      internalID: -1899099516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_147
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5590d51215495ba438876cc8a94cb067
+      internalID: 1905111613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_148
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21d5d4e2fa8f8e4bb6f20506bce09d7
+      internalID: -521495015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_149
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefd6da7069c03e4a85304e464214367
+      internalID: -761183594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_150
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b868db11fe17ae34fac341a56328473d
+      internalID: 425397429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_151
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99d99d7b447522438585a13498be0b6
+      internalID: 1926749903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_152
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4278b430996666242afc361860655150
+      internalID: 1377462473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_153
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e021a48e8980e47b67bddbd621d8cc
+      internalID: -1385114295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_154
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aa98ff7f543534692f0c18cf5e91c0
+      internalID: 651720655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_155
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5634295ff8fe79f4a9dd4f0920495243
+      internalID: 503207518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae24e4f7562319f4b9990e19c8b7edc7
+      internalID: -1864270772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_157
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9578cb1d18f75d44bede8121433bf92
+      internalID: -151957074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_158
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db47038623cceb2478b330ec794c8f9a
+      internalID: 210703007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_159
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f26a679a15d6dc4b835f4be5dd64c33
+      internalID: -4845376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_160
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bd9f86203b95b43bc89d83616166f1
+      internalID: -1291172360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_161
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e771c80d84b6b1b4cab83f45769170e2
+      internalID: -292047915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_162
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04df231913a5dff4ba57905b7fc6c9b4
+      internalID: -1135109015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_163
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d81efc1d8033a44db8c4de2fcf74c6f
+      internalID: -1750842431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_164
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfe62aca9f2f294f8e348e505a68dd0
+      internalID: 1869077455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_165
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b5f5cb43e355547b1e3eeb3dc1c0c6
+      internalID: -1448028058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_166
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfafa4ce2d836a44a3ad8dc405e2579
+      internalID: -1246775237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_167
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39fb7cd6e8f880479c5a35851182a71
+      internalID: -1191316380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_168
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ff5157979c58c489a3939563074426
+      internalID: -474096380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_169
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b2fba3e15c7604db340ef5b8579d0a
+      internalID: -939202572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3b86e8abcc706499c42d4efc7efd85
+      internalID: -785681033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_171
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84867c1a73f311d4383afcaa46e4ea24
+      internalID: 1792458676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_172
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf5b2163c7025f458a17a3ae3133f6a
+      internalID: 2125152846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_173
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4aaffaf9de1c34e8164c7c75ff5950
+      internalID: -1192769914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_174
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5087a85c0a8c5984a885852a4475d502
+      internalID: -2671489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_175
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7788b834b270a9547b820067109e1fff
+      internalID: 222453802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_176
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4d45358b435ca458877dd85602c90c
+      internalID: 704211663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_177
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cab8563961d19458817dfba7107ed5
+      internalID: -475943635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_178
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb26c8c6969a26409f500a6178bcfa3
+      internalID: 988038336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_179
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f37b604b690754289ecddf5cf32990
+      internalID: -1814511483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_180
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2bd3914664fba4f9712d104478874a
+      internalID: -1654197031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_181
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427456f658c99944dbfa354ceff2ee28
+      internalID: 1663758942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_182
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e0a2c8cdfc6e844987a71769e49313
+      internalID: 1350686819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_183
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b015b9c56989f14cac6aeb6cfc580b4
+      internalID: -1011972915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_184
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efd7bcb29ab88c459de7411a1a8924a
+      internalID: -580963647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_185
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15653ea4fb1f8c4db68c5140982295d
+      internalID: -35517090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_186
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f992cb1385d7a504293a5c44a2cb6aeb
+      internalID: 940167955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_187
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e9fbfcb02aa3b41a34ec24e432074e
+      internalID: -1023591398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_188
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd28655bda2a7648be65a0271fad9e2
+      internalID: -546815125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_189
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caf9ab881bdc254a834e96978e0037b
+      internalID: 1558510083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_190
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ba8176f40c9cc46a5917f8d629687f
+      internalID: 812819017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_191
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a1c3c1cde64104b91e9323c6ca6edb
+      internalID: -1865581318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_192
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3001f3f77655fb4795c9140273bf582
+      internalID: 1928677104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_193
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd50bfb5f3200f6499d6aa82d3fe4b93
+      internalID: 1162750876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_194
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92a8f25efd7ab34ebc7c0e68ac10f30
+      internalID: -1166966222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_195
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bc5a603be456e41b882c735579a150
+      internalID: 1464928497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_196
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c1d9aa0f9fce4cba9ac9157c3c34c
+      internalID: 78541404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_197
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ed592c0fa94a44f96b1ee509d63a7d
+      internalID: 1640694009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_198
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65970250c21f8644e909299aece588a0
+      internalID: 1546914698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_199
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a8715b6b000c142be7d898e5453506
+      internalID: 193005907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb4fd6685eaf6048a49c86e4049a983
+      internalID: 1355922438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_201
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0a3598d978e1d47972111a1ee4c551
+      internalID: -1090617505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_202
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49e9beadf1625d4fab1f8ce69c08feb
+      internalID: -1455170269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_203
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae39e9d51c59bf94684295378aac8043
+      internalID: -1198122011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_204
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7ee2d1fcb1a8647a34a1353bba3db3
+      internalID: 857548265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_205
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9e80a588ad4324eaced8c9bc8f96a2
+      internalID: -1018210905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_206
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d447e44f5f36794fbdb9f11b6dfe4a4
+      internalID: -1785939360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_207
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80984e6035ba5874cbca2d421d36a8f5
+      internalID: -1275647818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_208
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd4880fb0878394682a33f3fa825743
+      internalID: 1549661965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_209
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404866ee9349fc34bb024c7250f75c34
+      internalID: 372956015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_210
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b065944398fa8d349aa385ee4f65069e
+      internalID: 1862600271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_211
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836873f004487884d9ea38258edbbf03
+      internalID: -388651127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_212
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca68f16a326ba1f4ab684c949a8ace02
+      internalID: -570463940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_213
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f3468a1d326ef4082714937d5b4517
+      internalID: -1264548519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_214
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9c81ead2e653c43a917df7e09d9d36
+      internalID: 1186319168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_215
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22311a8417ede1a43b36806955606795
+      internalID: 1366748697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f5a37c2667f774e8101ced8e55e4fe
+      internalID: -316561804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_217
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230176ccaa34b8a4da1f7118ec6c645d
+      internalID: -2136562457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_218
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d453bce2a9fde4695dab1791ca1e20
+      internalID: -1383741100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_219
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c575eb22783ba439524b2c21636928
+      internalID: -1932994936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_220
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014117ca14c7b274e8cdf3f939af7a83
+      internalID: -1432807900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_221
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f287eb6052cb8d640b5dca365f57de91
+      internalID: 2015124819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_222
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd087e51300ccb54ea74a6d83e9c5237
+      internalID: 1721021578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_223
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f773bf7297e6214fade0596690bf3bb
+      internalID: 866395787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_224
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ce5d58fbcb46942be6b03c050ee78c
+      internalID: -1213934344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_225
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd974bc180d60f5479cf5aca960526b9
+      internalID: 1533689230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_226
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fbca180f069094189b037b0f34ad7f
+      internalID: -887897394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_227
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de13613d3dfe3744284e2179dbe48838
+      internalID: -2123745171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_228
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df3e845f58144b40854ca7cfc614b4f
+      internalID: 207415142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_229
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ce622ab7308784482ed184b83d5b1f
+      internalID: -735291906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_230
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff88e5b27ba57c4da3c558f5ac96876
+      internalID: -1811950511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_231
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d371872ca50a0a44ebe6a042b3ddb861
+      internalID: -421018434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_232
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d508e48f919fad48934ff4edf1944ac
+      internalID: -634972116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_233
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60ca3535bc418d43a78b0612b7d0aa7
+      internalID: 162369871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_234
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698a3c5e1ed6a7f4f877c910a31542e0
+      internalID: -58633354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_235
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67593f0f249823a4eaffcc25569ef12e
+      internalID: 1961429983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_236
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e55cf582da02e42a6a0d8557920ec0
+      internalID: -179665708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_237
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964efe639a6e4bc40863043b674ee547
+      internalID: 2101448234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_238
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed62020d9c59ac46839c4335293051c
+      internalID: 1274652513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_239
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae45f4b98104dd4ca76464d9c4b2665
+      internalID: 1140299913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_240
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8023901cbdf2aa34cb47dd7bcbc5b6e6
+      internalID: 1805984787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_241
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bbd4d903682004796d9b6fd50a87cd
+      internalID: -2082211940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_242
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccd501f38099bc4c8e837d4a5ef03c4
+      internalID: -1190880381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_243
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fbb78866250f547aabdf7c77fc656e
+      internalID: -868204204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_244
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca772f7d21cede4e85fba5272b77314
+      internalID: -12178181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_245
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02761eae79571fe499d15c1608673c47
+      internalID: 2142950954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_246
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94a096998a67bd4e8914c975a724e38
+      internalID: -870624954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_247
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3851f7682be4574996458bd345e7012
+      internalID: -1627016406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_0: -638965160
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_1: 1820995890
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_10: 2053121922
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_100: 1553429511
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_101: 730434375
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_102: 1622616746
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_103: 138362990
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_104: -418661191
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_105: 971337917
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_106: 702719889
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_107: -563663494
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_108: -1707656773
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_109: 653352792
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_11: 642506294
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_110: -2141026218
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_111: 794996253
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_112: -605904339
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_113: -385309795
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_114: -534122817
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_115: -831616474
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_116: -1848488128
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_117: 1675387069
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_118: -1525883795
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_119: -1763970386
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_12: 1900835046
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_120: 1764390411
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_121: -537234861
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_122: -1022618685
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_123: 108721943
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_124: -1600410386
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_125: 853190825
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_126: -2033902242
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_127: 1378757689
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_128: -638104100
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_129: 1349406118
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_13: 159310268
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_130: -1514063651
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_131: -597375219
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_132: 1290050467
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_133: -722105840
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_134: -1126858953
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_135: 595014526
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_136: 717865185
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_137: -17578950
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_138: 1668692178
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_139: -1445875886
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_14: 487622294
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_140: 2005056379
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_141: -2098770841
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_142: -1677133961
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_143: -140477776
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_144: 210604480
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_145: -2106227094
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_146: -1899099516
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_147: 1905111613
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_148: -521495015
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_149: -761183594
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_15: 993342495
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_150: 425397429
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_151: 1926749903
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_152: 1377462473
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_153: -1385114295
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_154: 651720655
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_155: 503207518
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_156: -1864270772
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_157: -151957074
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_158: 210703007
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_159: -4845376
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_16: 1093158532
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_160: -1291172360
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_161: -292047915
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_162: -1135109015
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_163: -1750842431
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_164: 1869077455
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_165: -1448028058
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_166: -1246775237
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_167: -1191316380
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_168: -474096380
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_169: -939202572
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_17: -166373173
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_170: -785681033
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_171: 1792458676
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_172: 2125152846
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_173: -1192769914
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_174: -2671489
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_175: 222453802
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_176: 704211663
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_177: -475943635
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_178: 988038336
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_179: -1814511483
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_18: -1164265402
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_180: -1654197031
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_181: 1663758942
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_182: 1350686819
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_183: -1011972915
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_184: -580963647
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_185: -35517090
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_186: 940167955
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_187: -1023591398
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_188: -546815125
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_189: 1558510083
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_19: 572247460
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_190: 812819017
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_191: -1865581318
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_192: 1928677104
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_193: 1162750876
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_194: -1166966222
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_195: 1464928497
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_196: 78541404
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_197: 1640694009
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_198: 1546914698
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_199: 193005907
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_2: -1641971508
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_20: 35741153
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_200: 1355922438
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_201: -1090617505
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_202: -1455170269
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_203: -1198122011
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_204: 857548265
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_205: -1018210905
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_206: -1785939360
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_207: -1275647818
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_208: 1549661965
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_209: 372956015
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_21: -739657311
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_210: 1862600271
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_211: -388651127
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_212: -570463940
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_213: -1264548519
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_214: 1186319168
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_215: 1366748697
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_216: -316561804
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_217: -2136562457
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_218: -1383741100
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_219: -1932994936
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_22: 371450085
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_220: -1432807900
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_221: 2015124819
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_222: 1721021578
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_223: 866395787
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_224: -1213934344
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_225: 1533689230
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_226: -887897394
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_227: -2123745171
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_228: 207415142
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_229: -735291906
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_23: -249962147
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_230: -1811950511
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_231: -421018434
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_232: -634972116
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_233: 162369871
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_234: -58633354
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_235: 1961429983
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_236: -179665708
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_237: 2101448234
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_238: 1274652513
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_239: 1140299913
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_24: -2125886828
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_240: 1805984787
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_241: -2082211940
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_242: -1190880381
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_243: -868204204
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_244: -12178181
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_245: 2142950954
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_246: -870624954
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_247: -1627016406
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_25: 951879867
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_26: 638500993
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_27: 1285681318
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_28: 290006845
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_29: -1027049369
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_3: -1781834472
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_30: 1995075774
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_31: 1867111242
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_32: -200505787
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_33: -1549865153
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_34: 1908338993
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_35: -1202236846
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_36: 896682732
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_37: -1564141975
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_38: 1509457398
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_39: -1664496278
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_4: -1331052149
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_40: 231686308
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_41: -1400673561
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_42: 794377402
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_43: -779691274
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_44: -19551760
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_45: 407268751
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_46: 1469960656
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_47: -951846077
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_48: -391714860
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_49: -784980696
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_5: -222250839
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_50: -153519228
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_51: -1459730117
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_52: 1768222935
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_53: -121223769
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_54: 1139527681
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_55: -1589739741
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_56: 271744109
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_57: -463791820
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_58: 2105960127
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_59: 1970237612
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_6: -1455624758
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_60: -1626106386
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_61: -605701698
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_62: -1859879091
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_63: -556504014
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_64: -1586272986
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_65: -1901426414
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_66: -626370095
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_67: 376463263
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_68: 1441330183
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_69: -239297774
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_7: 87147268
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_70: -1476108090
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_71: 715293808
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_72: 1410755198
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_73: 1554553286
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_74: 1445048483
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_75: 753450111
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_76: 654957056
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_77: 350052543
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_78: 1171018804
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_79: -1474178154
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_8: -2143216799
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_80: 1073470258
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_81: 874003143
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_82: -234153271
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_83: -1444407884
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_84: 2092088199
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_85: 313545951
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_86: 230107187
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_87: -388671517
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_88: 908145450
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_89: 262868483
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_9: -1566354467
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_90: -374942237
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_91: -2097628250
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_92: 1798024659
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_93: 675262797
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_94: 201230266
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_95: 1589013420
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_96: -170699911
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_97: 412984776
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_98: 1517774498
+      pokemon_b2_mt_moon_ground_1_by_skatefilter5_deqlk7i_99: -1224287216
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
