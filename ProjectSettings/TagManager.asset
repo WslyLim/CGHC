@@ -14,11 +14,11 @@ TagManager:
   - UI
   - Player
   - Collider
-  - EncounterArea
+  - SolidObjectLayer
   - FovLayer
   - Portal
   - Checkpoint
-  - 
+  - Encounter
   - 
   - 
   - 

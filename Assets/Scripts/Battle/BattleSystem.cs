@@ -20,6 +20,7 @@ public class BattleSystem : MonoBehaviour
 
 	public TextMeshProUGUI dialogueText;
     [SerializeField] BattleDialogBox dialogBox;
+    [SerializeField] PartyScreen partyScreen;
 
 	public BattleState state;
     int currentAction;
@@ -70,15 +71,15 @@ public class BattleSystem : MonoBehaviour
         if (isForcedBattle)
         {
             // Setup Player Monsters with HUD
-            for (int i = 0; i < playerParty.monsters.Count; i++)
+            for (int i = 0; i < playerParty.Monsters.Count; i++)
             {
-                playerUnits[i].Setup(playerParty.monsters[i]);
+                playerUnits[i].Setup(playerParty.Monsters[i]);
             }
 
             // Setup Enemy Monsters with HUD
-            for (int i = 0; i < enemyParty.monsters.Count; i++)
+            for (int i = 0; i < enemyParty.Monsters.Count; i++)
             {
-                enemyUnits[i].Setup(enemyParty.monsters[i]);
+                enemyUnits[i].Setup(enemyParty.Monsters[i]);
             }
         }
         else
@@ -90,9 +91,9 @@ public class BattleSystem : MonoBehaviour
                 monsterAmount = 1;
 
             // Setup Player Monsters with HUD
-            for (int i = 0; i < playerParty.monsters.Count; i++)
+            for (int i = 0; i < playerParty.Monsters.Count; i++)
             {
-                playerUnits[i].Setup(playerParty.monsters[i]);
+                playerUnits[i].Setup(playerParty.Monsters[i]);
             }
 
             // Setup Enemy Monsters with HUD
@@ -101,7 +102,8 @@ public class BattleSystem : MonoBehaviour
                 enemyUnits[i].Setup(wildMonster.GetRandomWildMonsters());
             }
         }
-        
+
+        partyScreen.Init();
 
         yield return dialogBox.TypeDialog("Battle Started");
 
@@ -113,7 +115,7 @@ public class BattleSystem : MonoBehaviour
     #region Battle Unit's Turn Management
     public void GatherAllBattleUnit() // Gather all monsters in the battle field and store into the list
     {
-        for (int i = 0; i < playerParty.monsters.Count; i++)
+        for (int i = 0; i < playerParty.Monsters.Count; i++)
             if (playerUnits[i].gameObject.activeSelf)
                 allBattleUnits.Add(playerUnits[i]);
 
@@ -520,6 +522,12 @@ public class BattleSystem : MonoBehaviour
 
     }
 
+    void OpenPartyScreen()
+    {
+        
+        partyScreen.gameObject.SetActive(true);
+    }
+
     private bool LoseOrWin()
     {
         // If no more enemy unit alive, end battle
@@ -553,7 +561,7 @@ public class BattleSystem : MonoBehaviour
             image.color = Color.white;
         }
 
-        playerParty.monsters.ForEach(monster => monster.OnBattleOver());
+        playerParty.Monsters.ForEach(monster => monster.OnBattleOver());
 
         // Clear up the list of battle units in the previous battle
         allBattleUnits.Clear();

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c107026ccf45ff845946251a83467e93, type: 3}
+  m_Name: Medium Health Potion
+  m_EditorClassIdentifier: 
+  itemName: Medium Health Potion
+  description: 
+  icon: {fileID: -273971454, guid: 77d2eee1d062a99498106bf54f5074c2, type: 3}
+  hpAmount: 30
+  restoreMaxHP: 0
+  spAmount: 0
+  restoreMaxSP: 0
+  revive: 0
+  maxRevive: 0

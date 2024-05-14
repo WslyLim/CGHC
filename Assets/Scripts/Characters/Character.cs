@@ -74,7 +74,7 @@ public class Character : MonoBehaviour
         var diff = targetPos - transform.position;
         var dir = diff.normalized;
 
-        var collisionLayer = GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer;
+        var collisionLayer = GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer | GameLayers.i.SolidObjectLayer;
         if (!animator.IsSurfing)
              collisionLayer |= GameLayers.i.WaterLayer;
 

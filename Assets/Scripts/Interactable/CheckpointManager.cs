@@ -53,7 +53,7 @@ public class CheckpointManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void HandleUpdate()
+    public void HandleUpdate(Action onBack)
     {
         if (Input.GetKeyDown(KeyCode.DownArrow)) 
         {
@@ -101,6 +101,9 @@ public class CheckpointManager : MonoBehaviour
             
             StartCoroutine(OnClickTeleport(currentSceneSelection, destinationIdentifier));
         }
+
+        if (Input.GetKeyDown(KeyCode.X))
+            onBack?.Invoke();
     }
 
     // Collect Checkpoint Data and store into cpData

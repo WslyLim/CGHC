@@ -13,7 +13,7 @@ public class SurfableWater : MonoBehaviour, Interactable, IPlayerTriggerable
         if (animator.IsSurfing)
             yield break;
 
-        var monsterWithTP = player.GetComponent<MonsterParty>().monsters.FirstOrDefault(x => x.Base.MonsterName == "Vermillion Bird");
+        var monsterWithTP = player.GetComponent<MonsterParty>().Monsters.FirstOrDefault(x => x.Base.MonsterName == "Vermillion Bird");
         if (monsterWithTP != null)
         {
             Debug.Log("Can surf!");

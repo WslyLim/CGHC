@@ -6,6 +6,7 @@ public class GameLayers : MonoBehaviour
 {
     public LayerMask waterLayer;
     public LayerMask interactableLayer;
+    public LayerMask solidObjectLayer;
     public LayerMask encounterLayer;
     public LayerMask playerLayer;
     public LayerMask fovLayer;
@@ -23,6 +24,8 @@ public class GameLayers : MonoBehaviour
     public LayerMask WaterLayer => waterLayer;
 
     public LayerMask InteractableLayer => interactableLayer;
+
+    public LayerMask SolidObjectLayer => solidObjectLayer;
 
     public LayerMask EncounterLayer => encounterLayer;
 

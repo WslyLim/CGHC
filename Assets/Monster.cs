@@ -190,6 +190,17 @@ public class Monster
         }
         return false;
     }
+
+    public void DecreaseHP(int damage)
+    {
+        HP = Mathf.Clamp(HP - damage, 0, MaxHealth);
+        //OnHPChanged?.Invoke();
+    }
+    public void IncreaseHP(int heal)
+    {
+        HP = Mathf.Clamp(HP + heal, 0, MaxHealth);
+        //OnHPChanged?.Invoke();
+    }
 }
 
 public class DamageDetails

@@ -41,20 +41,6 @@ public class MapManagement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M)) 
-        {
-            if (map.activeSelf)
-            {
-                OpenMap.Invoke();
-                map.SetActive(false);
-            }
-            else if (!map.activeSelf)
-            {
-                OpenMap.Invoke();
-                map.SetActive(true);
-            }
-        }
-
         // Normalize the player's position to a 0-1 range
         float normalizedX = player.position.x / worldMapSize.x;
         float normalizedY = player.position.y / worldMapSize.y;

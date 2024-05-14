@@ -1,19 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameState {FreeRoam, Map, Battle, Dialog, Cutscene, Paused}
+public enum GameState {FreeRoam, Bag, Map, Party, Battle, Dialog, Cutscene, Paused}
 
 public class GameController : MonoBehaviour
 {
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
+    [SerializeField] PartyScreen partyScreen;
     TrainerController trainer;
 
     [SerializeField] GameState state;
     GameState stateBeforePaused;
+
+    [SerializeField] List<GameObject> menu;
 
     public static GameController Instance {  get; private set; }
 
@@ -117,8 +121,26 @@ public class GameController : MonoBehaviour
             StartCoroutine(StartBattle(FindAnyObjectByType<MapArea>()));
             state = GameState.Battle;
         }
+        
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            int index = 0; // referring to specific element in the list
+            menu[index].SetActive(true);
+            state = GameState.Bag;
+        }
+        else if (Input.GetKeyDown(KeyCode.M)) 
+        {
+            int index = 1; // referring to specific element in the list
+            menu[index].SetActive(true);
+            state = GameState.Map;
+        }
+        else if (Input.GetKeyDown(KeyCode.M))
+        {
+            int index = 2; // referring to specific element in the list
+            menu[index].SetActive(true);
+            state = GameState.Party;
 
-
+        }
 
         if (state == GameState.FreeRoam) 
         {
@@ -136,8 +158,32 @@ public class GameController : MonoBehaviour
         }
         else if (state == GameState.Map) 
         {
-            CheckpointManager.Instance.HandleUpdate();
+            int index = 1; // referring to specific element in the list
+            Action onClose = () =>
+            {
+                menu[index].gameObject.SetActive(false);
+                state = GameState.FreeRoam;
+            };
+
+            CheckpointManager.Instance.HandleUpdate(onClose);
         }
+        else if (state == GameState.Bag)
+        {
+            int index = 0;
+            Action onClose = () =>
+            {
+                menu[index].gameObject.SetActive(false);
+                state = GameState.FreeRoam;
+            };
+
+            InventoryUI.Instance.HandleUpdate(onClose);
+        }
+        else if (state == GameState.Party) 
+        {
+
+
+        }
+
     }
 
 
