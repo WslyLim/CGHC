@@ -9,10 +9,14 @@ using System.Linq;
 using UnityEditor.Experimental.GraphView;
 using static UnityEngine.GraphicsBuffer;
 
-public enum BattleState { Start, ActionSelection, MoveSelection, SelectingAlly, SelectingTarget, PerformMove, Busy, BattleOver}
+public enum BattleState { Start, ActionSelection, MoveSelection, Bag, SelectingAlly, SelectingTarget, PerformMove, Busy, BattleOver}
+
+public enum BattleOutcome { None, Ongoing, PlayerWon, PlayerLost}
 
 public class BattleSystem : MonoBehaviour
 {
+    [SerializeField] Camera mainCamera;
+
     [SerializeField] List<BattleUnit> allBattleUnits;
     public List<BattleUnit> playerUnits;
 	public List<BattleUnit> enemyUnits;
@@ -21,6 +25,7 @@ public class BattleSystem : MonoBehaviour
 	public TextMeshProUGUI dialogueText;
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
+    [SerializeField] InventoryUI inventoryUI;
 
 	public BattleState state;
     int currentAction;
@@ -39,6 +44,9 @@ public class BattleSystem : MonoBehaviour
 
 
     public event Action<bool> OnBattleOver;
+    public List<BattleUnit> AllBattleUnits => allBattleUnits;
+
+
 
     // Random Encounter Battle
     public void StartBattle(MonsterParty playerParty, MapArea wildMonster)
@@ -108,8 +116,7 @@ public class BattleSystem : MonoBehaviour
         yield return dialogBox.TypeDialog("Battle Started");
 
         GatherAllBattleUnit();
-        SortBySpeed();
-        ExecuteTurn();
+        TurnChecking();
     }
 
     #region Battle Unit's Turn Management
@@ -119,69 +126,86 @@ public class BattleSystem : MonoBehaviour
             if (playerUnits[i].gameObject.activeSelf)
                 allBattleUnits.Add(playerUnits[i]);
 
-        for (int i = 0; i <= monsterAmount; i++)
+        for (int i = 0; i < enemyUnits.Count; i++)
             if (enemyUnits[i].gameObject.activeSelf)
                 allBattleUnits.Add(enemyUnits[i]);
     }
 
-    public void TurnChecking() // Check the monster's turn based by speed attribute, either enemy or player will attack first
+    public void TurnChecking() // Check the monster's turn based on the speed attribute
     {
-        //foreach (BattleUnit unit in allBattleUnits)
-        //{
-        //    if (unit.HasFallen)
-        //    {
-        //        allBattleUnits.Remove(unit);
-        //    }
-        //}
-
-        if (currentTurn >= allBattleUnits.Count - 1)
-        {
-            currentTurn = 0;
-            foreach (BattleUnit unit in allBattleUnits)
-            {
-                unit.HasTakenTurn = false;
-            }
-        }
-        else if (currentTurn < allBattleUnits.Count)
-        {
-            currentTurn++;
-        }
+        SortBySpeed();
+        ExecuteTurn();
     }
 
     public void ExecuteTurn()
     {
         CurrentUnitTurn = GetNextTurnUnit();
 
-        if (CurrentUnitTurn.isPlayerUnit)
-            ActionSelection();
-        else if (!CurrentUnitTurn.isPlayerUnit)
-            StartCoroutine(EnemyMove(CurrentUnitTurn));
+        if (CurrentUnitTurn != null)
+        {
+            if (CurrentUnitTurn.isPlayerUnit)
+            {
+                ActionSelection();
+            }
+            else
+            {
+                StartCoroutine(EnemyMove(CurrentUnitTurn));
+            }
+        }
     }
 
-    public BattleUnit GetNextTurnUnit()
+    private BattleUnit GetNextTurnUnit()
     {
-        foreach (BattleUnit unit in allBattleUnits)
+        for (int i = currentTurn; i < allBattleUnits.Count; i++)
         {
-            if (!unit.HasTakenTurn)
+            BattleUnit unit = allBattleUnits[i];
+            currentTurn++;
+
+            if (unit.Monster.HP > 0)
             {
-                unit.HasTakenTurn = true;
                 return unit;
             }
         }
+
+        // Reset the turn and check again
+        currentTurn = 0;
+        ResetTurns();
+
+        // Re-check from the beginning after resetting
+        for (int i = currentTurn; i < allBattleUnits.Count; i++)
+        {
+            BattleUnit unit = allBattleUnits[i];
+            currentTurn++;
+
+            if (unit.Monster.HP > 0)
+            {
+                return unit;
+            }
+        }
+
+        Debug.Log("Executed");
         return null;
+    }
+
+    private void ResetTurns()
+    {
+        foreach (BattleUnit unit in allBattleUnits)
+        {
+            unit.HasTakenTurn = false;
+        }
     }
 
     public void SortBySpeed() // Sort the monster's turn by speed, the highest speed will be the first to perform a move
     {
-        allBattleUnits.Sort((unitA, unitB) =>
+        allBattleUnits.Sort((unit1, unit2) =>
         {
-            // Get the speed of MonsterBase associated with BattleUnit A
-            int speedA = unitA.Monster.Speed;
-            // Get the speed of MonsterBase associated with BattleUnit B
-            int speedB = unitB.Monster.Speed;
-
-            // Compare the speeds in descending order (higher speed first)
-            return speedB.CompareTo(speedA);
+            int speedComparison = unit2.Monster.Speed.CompareTo(unit1.Monster.Speed);
+            if (speedComparison == 0)
+            {
+                // If speeds are equal, compare by level
+                return unit2.Monster.Level.CompareTo(unit1.Monster.Level);
+            }
+            return speedComparison;
         });
     }
 
@@ -207,6 +231,12 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableMoveSelector(true);
     }
 
+    void OpenInventory()
+    {
+        state = BattleState.Bag;
+        inventoryUI.gameObject.SetActive(true);
+    }
+
     #endregion
 
     #region Turn Management
@@ -224,14 +254,24 @@ public class BattleSystem : MonoBehaviour
 
         var move = enemy.Monster.GetRandomMove();
 
-        yield return RunMove(enemy, playerUnits[0], move); // Need to be updated later
+        var target = GetRandomTarget();
+
+        yield return RunMove(enemy, target, move); // Need to be updated later
     }
 
     IEnumerator RunMove(BattleUnit sourceUnit, BattleUnit targetUnit, Move move)
     {
         state = BattleState.Busy;
 
-        yield return dialogBox.TypeDialog($"{sourceUnit.Monster.Base.MonsterName} (Team) used {move.MoveBase.MoveName}");
+        string allyOrFoe;
+        if (sourceUnit.isPlayerUnit)
+            allyOrFoe = "(Team)";
+        else
+            allyOrFoe = "(Enemy)";
+
+        yield return dialogBox.TypeDialog($"{sourceUnit.Monster.Base.MonsterName} {allyOrFoe} used {move.MoveBase.MoveName}");
+
+        move.SP = Mathf.Clamp(move.SP--, 0, move.MoveBase.SP);
 
         if (move.MoveBase.MoveCategory == MoveCategory.Status)
         {
@@ -240,32 +280,22 @@ public class BattleSystem : MonoBehaviour
         else if (move.MoveBase.MoveCategory == MoveCategory.Heal)
         {
             var heal = move.MoveBase;
-            if (move.MoveBase.Target == MoveTarget.Self) 
+            if (move.MoveBase.Target == MoveTarget.Self)
             {
                 int healedHP = (int)(sourceUnit.Monster.MaxHealth * heal.HealingPercentage / 100);
-
-                sourceUnit.Monster.HP += healedHP;
-
-                if (sourceUnit.Monster.HP >= sourceUnit.Monster.MaxHealth)
-                    sourceUnit.Monster.HP = sourceUnit.Monster.MaxHealth;
-
-                yield return sourceUnit.HUD.UpdateHP();
+                sourceUnit.Monster.IncreaseHP(healedHP);
             }
             else if (move.MoveBase.Target == MoveTarget.Ally)
             {
                 int healedHP = (int)(targetUnit.Monster.MaxHealth * heal.HealingPercentage / 100);
-                targetUnit.Monster.HP += healedHP;
-
-                if (targetUnit.Monster.HP >= targetUnit.Monster.MaxHealth)
-                    targetUnit.Monster.HP = targetUnit.Monster.MaxHealth;
-
-                yield return targetUnit.HUD.UpdateHP();
+                targetUnit.Monster.IncreaseHP(healedHP);
             }
         }
         else
         {
-            var damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster); // Need to be updated later
-            yield return targetUnit.HUD.UpdateHP(); // Need to be updated later
+            yield return HandleSimpleAnimation(sourceUnit);
+            yield return Shake(targetUnit.gameObject, 5f, 0.3f);
+            var damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster);
             yield return ShowDamageDetails(damageDetails);
         }
 
@@ -274,26 +304,26 @@ public class BattleSystem : MonoBehaviour
         {
             yield return HandleFaintedMonster(targetUnit);
 
-            bool win = LoseOrWin();
+            BattleOutcome outcome = LoseOrWin();
+
             // If there is still an enemy alive in the battlefield, then the fight continues
-            if (win)
+            if (outcome == BattleOutcome.PlayerWon)
             {
-                OnBattleOver(win);
+                OnBattleOver(true);
                 CleanUp();
             }
-            else
+            else if (outcome == BattleOutcome.PlayerLost)
             {
-                SortBySpeed();
-                TurnChecking();
-                ExecuteTurn();
+                OnBattleOver(false);
+                CleanUp();
             }
+            //else if (outcome == BattleOutcome.Ongoing)
+            //{
+            //    TurnChecking();
+            //}
         }
-        else
-        {
-            SortBySpeed();
-            TurnChecking();
-            ExecuteTurn();
-        }  
+        
+        TurnChecking();
     }
     #endregion
 
@@ -304,16 +334,32 @@ public class BattleSystem : MonoBehaviour
         {
             HandleActionSelection();
         }
-        else if (state == BattleState.MoveSelection) 
+        else if (state == BattleState.MoveSelection)
         {
             HandleMoveSelection();
         }
         else if (state == BattleState.SelectingTarget)
         {
-            if (CurrentUnitTurn.Monster.Moves[currentMove].MoveBase.Target == MoveTarget.Ally) 
+            if (CurrentUnitTurn.Monster.Moves[currentMove].MoveBase.Target == MoveTarget.Ally)
                 HandlePartySelection();
             else if (CurrentUnitTurn.Monster.Moves[currentMove].MoveBase.Target == MoveTarget.Enemy)
                 HandleEnemySelection();
+        }
+        else if (state == BattleState.Bag)
+        {
+            Action onBack = () => 
+            {
+                inventoryUI.gameObject.SetActive(false);
+                state = BattleState.ActionSelection;
+            };
+
+            Action onItemUsed = () =>
+            {
+                inventoryUI.gameObject.SetActive(false);
+                TurnChecking();
+            };
+
+            inventoryUI.HandleUpdate(onBack, onItemUsed);
         }
     }
 
@@ -330,7 +376,7 @@ public class BattleSystem : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.UpArrow))
             currentAction -= 2;
 
-        currentAction = Mathf.Clamp(currentAction, 0, 3);
+        currentAction = Mathf.Clamp(currentAction, 0, 2);
 
         dialogBox.UpdateActionSelection(currentAction);
 
@@ -343,7 +389,12 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 1)
             {
-                // Item
+                OpenInventory();
+            }
+            else if (currentAction == 2)
+            {
+                OnBattleOver(false);
+                CleanUp();
             }
         }
     }
@@ -366,6 +417,9 @@ public class BattleSystem : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
+            var move = CurrentUnitTurn.Monster.Moves[currentMove];
+            if (move.SP == 0 && !move.InfiniteSP) return;
+
             if (CurrentUnitTurn.Monster.Moves[currentMove].MoveBase.Target == MoveTarget.Self)
             {
                 dialogBox.EnableMoveSelector(false);
@@ -404,13 +458,19 @@ public class BattleSystem : MonoBehaviour
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
+            
             StartCoroutine(PlayerMove(CurrentUnitTurn, enemyUnits[currentTarget]));
+            
+            dialogBox.enemyBackgroundImages[currentTarget].color = Color.white;
+            dialogBox.enemyTexts[currentTarget].color = Color.black;
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
             state = BattleState.MoveSelection;
+            
             dialogBox.EnableMoveSelector(true);
             dialogBox.EnableDialogText(false);
+            
             dialogBox.enemyBackgroundImages[currentTarget].color = Color.white;
             dialogBox.enemyTexts[currentTarget].color = Color.black;
         }
@@ -437,19 +497,77 @@ public class BattleSystem : MonoBehaviour
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
-            StartCoroutine(PlayerMove(CurrentUnitTurn, playerUnits[currentTarget])); // Need to be Updated
+
+            StartCoroutine(PlayerMove(CurrentUnitTurn, playerUnits[currentTarget]));
+
+            dialogBox.partyBackgroundImages[currentTarget].color = Color.white;
+            dialogBox.partyTexts[currentTarget].color = Color.black;
+
             currentTarget = 0;
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
             state = BattleState.MoveSelection;
+            
             dialogBox.EnableMoveSelector(true);
             dialogBox.EnableDialogText(false);
-            dialogBox.enemyBackgroundImages[currentTarget].color = Color.white;
-            dialogBox.enemyTexts[currentTarget].color = Color.black;
+            
+            dialogBox.partyBackgroundImages[currentTarget].color = Color.white;
+            dialogBox.partyTexts[currentTarget].color = Color.black;
         }
     }
     #endregion
+
+    BattleUnit GetRandomTarget()
+    {
+        var unitList = playerUnits.Where(unit => unit.Monster != null && unit.Monster.HP > 0 && unit.gameObject.activeSelf).ToList();
+        BattleUnit unit = unitList[UnityEngine.Random.Range(0, unitList.Count)];
+        return unit;
+    }
+
+    public IEnumerator Shake(GameObject obj, float magnitude, float duration)
+    {
+        Vector3 originalPos = obj.transform.localPosition;
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            float x = UnityEngine.Random.Range(-1f, 1f) * magnitude;
+            float y = UnityEngine.Random.Range(-1f, 1f) * magnitude;
+
+            obj.transform.localPosition = new Vector3(originalPos.x + x, originalPos.y + y, originalPos.z);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        obj.transform.localPosition = originalPos;
+    }
+
+    IEnumerator HandleSimpleAnimation(BattleUnit unit, float duration = 0.1f)
+    {
+        RectTransform unitPos = unit.GetComponent<RectTransform>();
+        bool thisUnit = unit.isPlayerUnit;
+        float startPivotY = thisUnit ? 0.5f : 0.5f;
+        float endPivotY = thisUnit ? 0 : 1;
+
+        // Animate pivot in the first direction
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            unitPos.pivot = new Vector2(unitPos.pivot.x, Mathf.Lerp(startPivotY, endPivotY, t / duration));
+            yield return null;
+        }
+        unitPos.pivot = new Vector2(unitPos.pivot.x, endPivotY);
+
+        // Animate pivot back to the original position
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            unitPos.pivot = new Vector2(unitPos.pivot.x, Mathf.Lerp(endPivotY, startPivotY, t / duration));
+            yield return null;
+        }
+        unitPos.pivot = new Vector2(unitPos.pivot.x, startPivotY);
+    }
 
     IEnumerator ShowStatusChanges(Monster monster) 
     {
@@ -463,7 +581,10 @@ public class BattleSystem : MonoBehaviour
     IEnumerator ShowDamageDetails(DamageDetails dmgDetail)
     {
         if (dmgDetail.Critical > 1f)
+        {
+            yield return Shake(mainCamera.gameObject, .3f, 0.15f);
             yield return dialogBox.TypeDialog("A Critical Hit!");
+        }
 
         if (dmgDetail.TypeEffective > 1f)
             yield return dialogBox.TypeDialog("It's Super Effective!");
@@ -518,25 +639,39 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
-        allBattleUnits.Remove(faintedUnit);
-
-    }
-
-    void OpenPartyScreen()
-    {
+        //allBattleUnits.Remove(faintedUnit);
         
-        partyScreen.gameObject.SetActive(true);
     }
 
-    private bool LoseOrWin()
+    private BattleOutcome LoseOrWin()
     {
-        // If no more enemy unit alive, end battle
-        if (!allBattleUnits.Exists(unit => playerUnits.Contains(unit)))
-            return true;
-        else if (!allBattleUnits.Exists(unit => enemyUnits.Contains(unit)))
-            return true;
+        // Check if all active player units are defeated
+        bool allActivePlayersDefeated = playerUnits
+            .Where(unit => unit.gameObject.activeSelf) // Filter active player units
+            .All(unit => unit.Monster.HP <= 0);
+
+        // Check if all active enemy units are defeated
+        bool allActiveEnemiesDefeated = enemyUnits
+            .Where(unit => unit.gameObject.activeSelf) // Filter active enemy units
+            .All(unit => unit.Monster.HP <= 0);
+
+        if (allActiveEnemiesDefeated)
+        {
+            // All active enemies are defeated, player wins
+            return BattleOutcome.PlayerWon;
+        }
+        else if (allActivePlayersDefeated)
+        {
+            // All active player units are defeated, player loses
+            return BattleOutcome.PlayerLost;
+        }
+        else if (!allActiveEnemiesDefeated && !allActivePlayersDefeated)
+        {
+            // The battle continues
+            return BattleOutcome.Ongoing;
+        }
         else
-            return false;
+            return BattleOutcome.None;
     }
 
     private void CleanUp()
@@ -552,11 +687,12 @@ public class BattleSystem : MonoBehaviour
 
         // Reset the turn
         currentTurn = 0;
+        currentTarget = 0;
         
         // Reset the highlighted colour
-        List<Image> colorReset = dialogBox.enemyBackgroundImages;
+        List<Image> colorToReset = dialogBox.enemyBackgroundImages;
 
-        foreach (var image in colorReset) 
+        foreach (var image in colorToReset) 
         {
             image.color = Color.white;
         }

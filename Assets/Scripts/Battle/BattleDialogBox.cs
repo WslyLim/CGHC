@@ -12,6 +12,7 @@ public class BattleDialogBox : MonoBehaviour
     [SerializeField] GameObject actionSelector;
     [SerializeField] GameObject moveSelector;
     [SerializeField] GameObject MoveDetails;
+    [SerializeField] GameObject SPDetail;
 
     [Header("Player HUD (Move and Action Selector)")]
     [SerializeField] List<TextMeshProUGUI> actionTexts;
@@ -26,6 +27,7 @@ public class BattleDialogBox : MonoBehaviour
     public List<Image> partyBackgroundImages;
 
     [SerializeField] TextMeshProUGUI typeText;
+    [SerializeField] TextMeshProUGUI SpText;
 
     public void SetDialog(string text)
     {
@@ -58,6 +60,7 @@ public class BattleDialogBox : MonoBehaviour
     {
         moveSelector.SetActive(enabled);
         MoveDetails.SetActive(enabled);
+        SPDetail.SetActive(enabled);
     }
 
     public void UpdateActionSelection(int selectedAction)
@@ -89,7 +92,16 @@ public class BattleDialogBox : MonoBehaviour
             }
         }
 
-        typeText.text = move.MoveBase.Type.ToString();
+        typeText.text = $"Move Type: {move.MoveBase.Type} \n" +
+            $"Move Power: {move.MoveBase.Power} \n" +
+            $"Move Accuracy: {move.MoveBase.Accuracy}";
+
+        SpText.text = $"Move SP: {move.SP} / {move.MoveBase.SP}";
+
+        if (move.SP == 0)
+            SpText.color = Color.red;
+        else
+            SpText.color = Color.black;
     }
 
 

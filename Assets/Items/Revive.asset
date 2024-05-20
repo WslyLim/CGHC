@@ -9,18 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5224b361b57e76e4ab633f8abcb4ece5, type: 3}
-  m_Name: Heal
+  m_Script: {fileID: 11500000, guid: c107026ccf45ff845946251a83467e93, type: 3}
+  m_Name: Revive
   m_EditorClassIdentifier: 
-  moveName: Heal
+  itemName: Revive
   description: 
-  type: 0
-  power: 0
-  accuracy: 0
-  sp: 20
-  infiniteSP: 0
-  healingPercentage: 30
-  moveCategory: 2
-  effects:
-    boosts: []
-  target: 2
+  icon: {fileID: 48480404, guid: 77d2eee1d062a99498106bf54f5074c2, type: 3}
+  hpAmount: 0
+  restoreMaxHP: 0
+  spAmount: 0
+  restoreMaxSP: 0
+  revive: 0
+  maxRevive: 1
+  repelAmount: 0

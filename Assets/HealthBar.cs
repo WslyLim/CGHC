@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class HealthBar : MonoBehaviour
 {
@@ -15,16 +16,17 @@ public class HealthBar : MonoBehaviour
     {
         float newHP = HP / 5f;
         float curHP = health.transform.localScale.x;
-        float changeAmount = curHP - newHP;
+        float changeAmount = Mathf.Abs(curHP - newHP); // Absolute difference
 
-        while (curHP - newHP > Mathf.Epsilon)
+        while (Mathf.Abs(curHP - newHP) > Mathf.Epsilon)
         {
-            curHP -= changeAmount * Time.deltaTime;
-            health.transform.localScale = new Vector3(curHP, .2f);
+            // Move current HP towards new HP
+            curHP = Mathf.MoveTowards(curHP, newHP, changeAmount * Time.deltaTime);
+            health.transform.localScale = new Vector3(curHP, .2f, 1f); // Assuming 1f is the Z scale
 
             yield return null;
         }
-        health.transform.localScale = new Vector3(newHP, .2f);
+        health.transform.localScale = new Vector3(newHP, .2f, 1f); // Final adjustment
     }
 
     

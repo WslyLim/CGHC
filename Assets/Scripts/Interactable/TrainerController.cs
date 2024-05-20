@@ -9,10 +9,21 @@ public class TrainerController : MonoBehaviour, Interactable
     [SerializeField] MonsterParty enemyParty;
     [SerializeField] GameObject exclamation;
     [SerializeField] GameObject fov;
+
+    [Header("Dialog Settings")]
+    [SerializeField] string trainersName;
     [SerializeField] Dialog dialogBeforeBattle; // for Battle
     [SerializeField] Dialog dialogAfterBattle; // for Conversation
-    [SerializeField] string trainersName;
+    [SerializeField] bool DialogAfterDefeat;
+
+    [Header("After Battle Settings")]
+    [SerializeField] List<Vector2> waypoints; // After defeating trainer
+    int currentWaypoint;
+
+    [SerializeField] bool showCharAfterBattle = true;
+
     Character character;
+
 
     public bool BattleLost { get; set; }
 
@@ -58,10 +69,10 @@ public class TrainerController : MonoBehaviour, Interactable
         yield return character.MoveChar(moveVec);
 
         // Show Dialog
-        StartCoroutine(DialogManager.Instance.ShowDialog(dialogBeforeBattle, trainersName,() =>
-        {
-            GameController.Instance.ForceStartBattle(this);
-        }));
+        yield return DialogManager.Instance.ShowDialog(dialogBeforeBattle, trainersName);
+
+        StartCoroutine(GameController.Instance.ForceStartBattle(this));
+
     }
 
     public IEnumerator Interact(Transform initiator)
@@ -69,10 +80,8 @@ public class TrainerController : MonoBehaviour, Interactable
         character.LookTowards(initiator.position);
         if (!BattleLost)
         {
-            yield return DialogManager.Instance.ShowDialog(dialogBeforeBattle, trainersName ,() =>
-            {
-                GameController.Instance.ForceStartBattle(this);
-            });
+            yield return DialogManager.Instance.ShowDialog(dialogBeforeBattle, trainersName);
+            StartCoroutine(GameController.Instance.ForceStartBattle(this));
         }
         else
         {
@@ -81,11 +90,37 @@ public class TrainerController : MonoBehaviour, Interactable
         
     }
 
-    public void OnBattleLoss()
+
+    public IEnumerator OnBattleLoss()
     {
         BattleLost = true;
         fov.SetActive(false);
         StoreTrainersData.Instance.SetTrainerBattleLost(trainersName, BattleLost);
 
+        if (DialogAfterDefeat) 
+        {
+            yield return DialogManager.Instance.ShowDialog(dialogAfterBattle, trainersName);
+        }
+        if (waypoints != null)
+        {
+            yield return Walk();
+            gameObject.SetActive(showCharAfterBattle);
+        }
+    }
+
+    private void Update()
+    {
+        character.HandleUpdate();
+    }
+
+    IEnumerator Walk()
+    {
+        yield return character.MoveChar(waypoints[currentWaypoint]);
+        currentWaypoint++;
+
+        if (waypoints.Count > currentWaypoint)
+            yield return Walk();
+
+        character.Animator.SetFacingDirection(FacingDirection.Right);   
     }
 }

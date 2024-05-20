@@ -25,21 +25,7 @@ public class DialogManager : MonoBehaviour
 
     public void HandleUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !isTyping) 
-        {
-            ++currentLine;
-            if (currentLine < dialog.Lines.Count)
-                StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
-            else
-            {
-                currentLine = 0;
-                isShowing = false;
-                dialogBox.SetActive(false);
-                onDialogFinished?.Invoke();
-                OnCloseDialog?.Invoke();
-            }
-
-        }
+        
     }
 
     Dialog dialog;
@@ -48,7 +34,7 @@ public class DialogManager : MonoBehaviour
     int currentLine = 0;
     bool isTyping;
     public bool isShowing { get; private set; }
-    public IEnumerator ShowDialog(Dialog dialog, string entityName = null, Action onFinished = null)
+    public IEnumerator ShowDialog(Dialog dialog, string entityName = null)
     {
         yield return new WaitForEndOfFrame();
 
@@ -56,36 +42,46 @@ public class DialogManager : MonoBehaviour
 
         isShowing = true;
         this.entityName.text = entityName ?? string.Empty;
-        this.dialog = dialog;
-        onDialogFinished = onFinished;
 
         dialogBox.SetActive(true);
-        yield return StartCoroutine(TypeDialog(dialog.Lines[0]));
+
+        foreach (var line in dialog.Lines) 
+        {
+            yield return TypeDialog(line);
+            yield return new WaitUntil (() => Input.GetKeyDown(KeyCode.Z));
+        }
+
+        dialogBox.SetActive(false);
+        isShowing = false;
+        OnCloseDialog?.Invoke();
     }
 
     public IEnumerator TypeDialog(string line)
     {
-        isTyping = true;
         dialogText.text = "";
         foreach (var letter in line.ToCharArray())
         {
             dialogText.text += letter;
             yield return new WaitForSeconds(1f / letterPerSecond);
         }
-        isTyping = false;
     }
 
-    public IEnumerator ShowDialogText(string dialog, string entityName = null, Action onFinished = null)
+    public IEnumerator ShowDialogText(string dialog, string entityName = null, bool waitForInput = true)
     {
-        yield return new WaitForEndOfFrame();
-
-        OnShowDialog?.Invoke();
-
         isShowing = true;
+        OnShowDialog?.Invoke();
         this.entityName.text = entityName ?? string.Empty;
-        onDialogFinished = onFinished;
 
         dialogBox.SetActive(true);
-        yield return StartCoroutine(TypeDialog(dialog));
+        yield return TypeDialog(dialog);
+
+        if (waitForInput) 
+        {
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        }
+
+        dialogBox.SetActive(false);
+        isShowing = false;
+        OnCloseDialog?.Invoke();
     }
 }

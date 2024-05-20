@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2652be2aaa7584a8af39945e3cffc2, type: 3}
   m_Name: Dragon
   m_EditorClassIdentifier: 
-  monsterName: Vermillion Bird
+  monsterName: 
   description: just a dragon
   leftSprite: {fileID: 21300000, guid: 1f4035cd5bc7abb42a67cbea7fd07f7a, type: 3}
   rightSprite: {fileID: 21300000, guid: 1f4035cd5bc7abb42a67cbea7fd07f7a, type: 3}
@@ -20,12 +20,12 @@ MonoBehaviour:
   monsterType2: 0
   growthRate: 0
   health: 100
-  attack: 120
+  attack: 30
   defense: 50
   speed: 50
   expYield: 340
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: f793f40f7b779e245879d540ec7c412f, type: 2}
     levelRequirement: 0
-  - moveBase: {fileID: 11400000, guid: f2570aebca909a746be4f5aa8ac4eaec, type: 2}
+  - moveBase: {fileID: 11400000, guid: 93e8a420f11fb764485def7df6a4dba2, type: 2}
     levelRequirement: 0

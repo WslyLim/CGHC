@@ -50,11 +50,11 @@ public class NPCController : MonoBehaviour, Interactable
         {
             npcState = NPCState.Dialog;
             character.LookTowards(initiator.position);
-            yield return DialogManager.Instance.ShowDialog(dialog, npcName,() => 
-            {
-                idleTimer = 0f;
-                npcState = NPCState.Idle; 
-            });
+
+            yield return DialogManager.Instance.ShowDialog(dialog, npcName);
+
+            idleTimer = 0f;
+            npcState = NPCState.Idle;
         }
     }
 }

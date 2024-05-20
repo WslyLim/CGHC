@@ -11,17 +11,29 @@ public class PartyMemberUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI monsterLevel;
     [SerializeField] HealthBar healthBar;
     [SerializeField] Image ExpBar;
+    [SerializeField] Image background;
 
-    Monster _monster;
+    
+
+    public TextMeshProUGUI MonsterName => monsterName;
+    public Image Background => background;
 
     public float transitionDuration;
     public void SetData(Monster monsterData)
     {
         _monster = monsterData;
 
-        monsterName.text = monsterData.Base.MonsterName;
+        UpdateData();
+        _monster.OnHPChanged += UpdateData;
+    }
+
+
+    Monster _monster;
+    void UpdateData()
+    {
+        monsterName.text = _monster.Base.MonsterName;
         SetLevel();
-        healthBar.SetHP((float)monsterData.HP / monsterData.MaxHealth);
+        healthBar.SetHP((float)_monster.HP / _monster.MaxHealth);
     }
 
     public IEnumerator UpdateHP()

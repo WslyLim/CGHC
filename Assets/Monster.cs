@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ public class Monster
         {
             return _base;
         } 
+        set { _base =  value; }
     }
 
     public int Level
@@ -24,6 +26,7 @@ public class Monster
         {
             return level;
         }
+        set { level = value; }
     }
 
     //public int Level { get; set; }
@@ -34,6 +37,20 @@ public class Monster
     public Dictionary<Stat, int> StatBoosts { get; private set; }
 
     public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+
+    public event System.Action OnHPChanged;
+
+    public Monster(Monster other)
+    {
+        Base = other.Base;
+        Level = other.Level;
+        HP = other.HP;
+        Moves = new List<Move>();
+        foreach (var move in other.Base.LearnableMoves)
+        {
+            Moves.Add(new Move(move.Base));
+        }
+    }
 
     public void Init()
     {
@@ -109,6 +126,7 @@ public class Monster
             damageDetails.Fainted = true;
         }
 
+        DecreaseHP(damage);
         return damageDetails;
     }
 
@@ -172,8 +190,10 @@ public class Monster
 
     public Move GetRandomMove()
     {
-        int r = Random.Range(0, Moves.Count);
-        return Moves[r];
+        var movesWithPP = Moves.Where(x => x.SP > 0 || x.InfiniteSP).ToList();
+
+        int r = Random.Range(0, movesWithPP.Count);
+        return movesWithPP[r];
     }
 
     public void OnBattleOver()
@@ -194,12 +214,12 @@ public class Monster
     public void DecreaseHP(int damage)
     {
         HP = Mathf.Clamp(HP - damage, 0, MaxHealth);
-        //OnHPChanged?.Invoke();
+        OnHPChanged?.Invoke();
     }
     public void IncreaseHP(int heal)
     {
         HP = Mathf.Clamp(HP + heal, 0, MaxHealth);
-        //OnHPChanged?.Invoke();
+        OnHPChanged?.Invoke();
     }
 }
 

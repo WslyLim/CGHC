@@ -16,14 +16,24 @@ public class BattleHUD : MonoBehaviour
     public float transitionDuration;
     public void SetData(Monster monsterData)
     {
+        if (_monster != null)
+            _monster.OnHPChanged -= UpdateHP;
+
         _monster = monsterData;
 
         monsterName.text = monsterData.Base.MonsterName;
         SetLevel();
         healthBar.SetHP( (float) monsterData.HP / monsterData.MaxHealth);
+        SetExp();
+        _monster.OnHPChanged += UpdateHP;
     }
 
-    public IEnumerator UpdateHP()
+    public void UpdateHP()
+    {
+        StartCoroutine(UpdateHPAsync());
+    }
+
+    public IEnumerator UpdateHPAsync()
     {
         yield return healthBar.SetHPSmooth((float)_monster.HP / _monster.MaxHealth);
     }
@@ -34,10 +44,6 @@ public class BattleHUD : MonoBehaviour
         
         float normalizedExp = GetNormalizedExp();
         ExpBar.fillAmount = normalizedExp;
-
-        Debug.Log(_monster.Exp.ToString());
-        Debug.Log(normalizedExp.ToString());
-        Debug.Log(_monster.Exp.ToString());
     }
 
     // Coroutine for smooth transition of fillAmount

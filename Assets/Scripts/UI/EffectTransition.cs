@@ -8,12 +8,13 @@ public class EffectTransition : MonoBehaviour
     [SerializeField] Animator cutsceneAnimator;
     public static EffectTransition Instance { get; private set; }
 
+    public Animator Animator => regularAnimator;
     public void Awake()
     {
         Instance = this;
     }
 
-    public IEnumerator PlayTransition()
+    public IEnumerator BattleTransition()
     {
         regularAnimator.SetTrigger("Start");
         yield return new WaitForSeconds(1.2f);
@@ -24,6 +25,13 @@ public class EffectTransition : MonoBehaviour
     {
         regularAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(0.8f);
+        regularAnimator.ResetTrigger("FadeOut");
+    }
+
+    public IEnumerator SimpleTransition() 
+    {
+        regularAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(0.3f);
         regularAnimator.ResetTrigger("FadeOut");
     }
 }

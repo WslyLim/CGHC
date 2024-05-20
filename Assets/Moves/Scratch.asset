@@ -17,3 +17,10 @@ MonoBehaviour:
   type: 1
   power: 20
   accuracy: 0
+  sp: 0
+  infiniteSP: 1
+  healingPercentage: 0
+  moveCategory: 0
+  effects:
+    boosts: []
+  target: 0

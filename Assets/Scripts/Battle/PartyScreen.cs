@@ -8,11 +8,11 @@ public class PartyScreen : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI messageText;
 
-    PartyMemberUI[] memberSlots;
+    [SerializeField] PartyMemberUI[] memberSlots;
     List<Monster> monsters;
     MonsterParty party;
 
-    int selection = 0;
+    [SerializeField] int selection = 0;
 
     public Monster SelectedMember => monsters[selection];
     public void Init()
@@ -40,6 +40,7 @@ public class PartyScreen : MonoBehaviour
 
         selection = Mathf.Clamp(selection, 0, monsters.Count - 1);
 
+        UpdatePartySelection();
         //if (selection != prevSelection)
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -47,6 +48,23 @@ public class PartyScreen : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.X))
             onBack?.Invoke();
             
+    }
+
+    public void UpdatePartySelection()
+    {
+        for (int i = 0; i < monsters.Count; i++)
+        {
+            if (i == selection)
+            {
+                memberSlots[i].MonsterName.color = Color.blue;
+                memberSlots[i].Background.color = Color.yellow;
+            }
+            else
+            {
+                memberSlots[i].MonsterName.color = Color.black;
+                memberSlots[i].Background.color = Color.white;
+            }
+        }
     }
 
     public void SetPartyData()

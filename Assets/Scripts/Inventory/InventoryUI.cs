@@ -30,6 +30,8 @@ public class InventoryUI : MonoBehaviour
     RectTransform itemListRect;
     public static InventoryUI Instance { get; set; }
 
+    Action OnItemUsed;
+
     private void Awake()
     {
         inventory = Inventory.GetInventory();
@@ -59,11 +61,15 @@ public class InventoryUI : MonoBehaviour
             slotUIList.Add(slotUIObj);
         }
 
+        selectedItem = Mathf.Clamp(selectedItem, 0, inventory.Slots.Count - 1);
+
         UpdateItemSelection();
     }
 
-    public void HandleUpdate(Action onBack)
+    public void HandleUpdate(Action onBack, Action onItemUsed = null)
     {
+        OnItemUsed = onItemUsed;
+
         if (state == InventoryUIState.ItemSelection) 
         {
             int prevSelection = selectedItem;
@@ -105,7 +111,10 @@ public class InventoryUI : MonoBehaviour
         state = InventoryUIState.Busy;
         var usedItem = inventory.UseItem(selectedItem, partyScreen.SelectedMember);
         if (usedItem != null)
+        {
             yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.ItemName}");
+            OnItemUsed?.Invoke();
+        }
         else
             yield return DialogManager.Instance.ShowDialogText($"It won't have any effect!");
 
@@ -122,9 +131,12 @@ public class InventoryUI : MonoBehaviour
                 slotUIList[i].NameText.color = Color.black;
         }
 
-        var item = inventory.Slots[selectedItem].Item;
-        itemIcon.sprite = item.Icon;
-        itemDescription.text = item.Description;
+        if (inventory.Slots.Count > 0)
+        {
+            var item = inventory.Slots[selectedItem].Item;
+            itemIcon.sprite = item.Icon;
+            itemDescription.text = item.Description;
+        }
 
         HandleScrolling();
     }

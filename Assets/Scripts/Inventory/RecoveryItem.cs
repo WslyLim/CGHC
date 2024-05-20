@@ -19,18 +19,52 @@ public class RecoveryItem : ItemBase
 
     [Header("Repel")]
     [SerializeField] int repelAmount;
-
     public override bool Use(Monster monster)
     {
-        if (hpAmount > 0)
+        if (revive || maxRevive)
+        {
+            if (monster.HP > 0)
+                return false;
+
+            if (revive)
+            {
+                monster.IncreaseHP(monster.MaxHealth / 2);
+            }
+            else if (maxRevive)
+            {
+                monster.IncreaseHP(monster.MaxHealth);
+
+            }
+
+            return true;
+        }
+
+        if (monster.HP == 0) return false;
+
+        if (restoreMaxHP || hpAmount > 0)
         {
             if (monster.HP == monster.MaxHealth) 
             {
                 return false;
             }
 
-            monster.IncreaseHP(hpAmount);
+            if (restoreMaxHP)
+                monster.IncreaseHP(monster.MaxHealth);
+            else
+                monster.IncreaseHP(hpAmount);
         }
+
+
+        // Restore SP
+        if (restoreMaxSP)
+        {
+            monster.Moves.ForEach(m => m.IncreaseSP(m.MoveBase.SP));
+        }
+        else if (spAmount > 0) 
+        {
+            monster.Moves.ForEach(m => m.IncreaseSP(spAmount));
+        }
+             
         return true;
     }
 }

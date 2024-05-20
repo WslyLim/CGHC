@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
     public IEnumerator StartBattle(MapArea mapArea)
     {
         state = GameState.Battle;
-        yield return StartCoroutine(EffectTransition.Instance.PlayTransition());
+        yield return StartCoroutine(EffectTransition.Instance.BattleTransition());
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 
@@ -70,9 +70,10 @@ public class GameController : MonoBehaviour
         battleSystem.StartBattle(playerParty, wildMonster);
     }
 
-    public void ForceStartBattle(TrainerController opponent)
+    public IEnumerator ForceStartBattle(TrainerController opponent)
     {
         state = GameState.Battle;
+        yield return EffectTransition.Instance.BattleTransition();
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 
@@ -85,18 +86,16 @@ public class GameController : MonoBehaviour
 
     void EndBattle(bool won)
     {
+
         if (trainer != null && won) 
         {
-            trainer.OnBattleLoss();
+            StartCoroutine(trainer.OnBattleLoss());
             trainer = null;
         }
 
-        if (won)
-        {
-            state = GameState.FreeRoam;
-            battleSystem.gameObject.SetActive(false);
-            worldCamera.gameObject.SetActive(true);
-        }
+        state = GameState.FreeRoam;
+        battleSystem.gameObject.SetActive(false);
+        worldCamera.gameObject.SetActive(true);
     }
 
     public void OpenMap()
@@ -116,6 +115,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.RightShift))
+            Time.timeScale = 2f;
+        else if (Input.GetKeyUp(KeyCode.RightShift))
+            Time.timeScale = 1f;
+
         if (Input.GetKeyDown(KeyCode.F))
         {
             StartCoroutine(StartBattle(FindAnyObjectByType<MapArea>()));
@@ -134,13 +138,17 @@ public class GameController : MonoBehaviour
             menu[index].SetActive(true);
             state = GameState.Map;
         }
-        else if (Input.GetKeyDown(KeyCode.M))
+        else if (Input.GetKeyDown(KeyCode.C))
         {
             int index = 2; // referring to specific element in the list
             menu[index].SetActive(true);
+            partyScreen.Init();
             state = GameState.Party;
-
         }
+
+
+        //========================================================================//
+
 
         if (state == GameState.FreeRoam) 
         {
@@ -156,6 +164,17 @@ public class GameController : MonoBehaviour
         {
             DialogManager.Instance.HandleUpdate();
         }
+        else if (state == GameState.Bag)
+        {
+            int index = 0; // referring to specific element in the list
+            Action onClose = () =>
+            {
+                menu[index].gameObject.SetActive(false);
+                state = GameState.FreeRoam;
+            };
+
+            InventoryUI.Instance.HandleUpdate(onClose);
+        }
         else if (state == GameState.Map) 
         {
             int index = 1; // referring to specific element in the list
@@ -167,21 +186,22 @@ public class GameController : MonoBehaviour
 
             CheckpointManager.Instance.HandleUpdate(onClose);
         }
-        else if (state == GameState.Bag)
+        else if (state == GameState.Party) 
         {
-            int index = 0;
+            int index = 2; // referring to specific element in the list
+
+            Action onSelect = () =>
+            {
+                Debug.Log("Selected");
+            };
+
             Action onClose = () =>
             {
                 menu[index].gameObject.SetActive(false);
                 state = GameState.FreeRoam;
             };
 
-            InventoryUI.Instance.HandleUpdate(onClose);
-        }
-        else if (state == GameState.Party) 
-        {
-
-
+            partyScreen.HandleUpdate(onSelect, onClose);
         }
 
     }

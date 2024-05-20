@@ -13,6 +13,8 @@ public class MoveBase : ScriptableObject
     [SerializeField] MonsterType type;
     [SerializeField] int power;
     [SerializeField] int accuracy;
+    [SerializeField] int sp;
+    [SerializeField] bool infiniteSP;
     [SerializeField] int healingPercentage;
     [SerializeField] MoveCategory moveCategory;
     [SerializeField] MoveEffects effects;
@@ -32,6 +34,12 @@ public class MoveBase : ScriptableObject
 
     public int Accuracy
     { get { return accuracy; } }
+
+    public int SP
+    { get { return sp; } }
+
+    public bool InfiniteSP
+    { get { return infiniteSP; } }
 
     public int HealingPercentage
     { get { return healingPercentage; } }

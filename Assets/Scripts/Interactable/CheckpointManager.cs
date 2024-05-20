@@ -217,8 +217,7 @@ public class CheckpointManager : MonoBehaviour
 
     public void SetMapUIText()
     {
-        var totalCpInScene = checkpointUI[currentSceneSelection].cpLocUI.Count-1;
-        Debug.Log(totalCpInScene);
+        var totalCpInScene = checkpointUI[currentSceneSelection].cpLocUI.Count - 1;
         if (totalCpInScene < currentCheckpoint)
             currentCheckpoint = totalCpInScene;
 
@@ -237,7 +236,6 @@ public class CheckpointManager : MonoBehaviour
         {
             if (status.sceneToLoad == currentSceneSelection && status.identifier == destinationIdentifier)
             {
-                Debug.Log("Found!");
                 if (status.isActive)
                     circleSelection.GetComponent<Image>().color = Color.green;
                 else
